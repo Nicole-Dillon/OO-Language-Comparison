@@ -530,17 +530,52 @@ this.gridPane.widthProperty().addListener((ObservableValue<? extends Number> obs
 ### Multithreading
 #### Swift
 
-#### Java
-Java can develop multi-threaded programs
+Swift uses the `Thread` class to  have an Objective-C method run in its own thread of execution. Threads are especially useful when you need to perform a lengthy task, but don’t want it to block the execution of the rest of the application. In particular, you can use threads to avoid blocking the main thread of the application, which handles user interface and event-related actions. Threads can also be used to divide a large job into several smaller jobs, which can lead to performance increases on multi-core computers. `init()` is used to initialize an NSThread Object.
 
-`start()` is used to initiate execution of a thread. `run()` serves as the path of execution for all threads. `sleep()` will make the current thread cease executing for a specified amount of time.
+```swift
+//Returns an NSThread object initialized with the given arguments
+init(target: Any, selector: Selector, object: Any?)
+
+```
+[Swift Documentation](https://developer.apple.com/documentation/foundation/thread)
+
+#### Java
+
+Threads can be created by either extending the Thread class or implementing the Runnable interface.`start()` is used to initiate execution of a thread. `run()` serves as the path of execution for all threads. `sleep()` will make the current thread cease executing for a specified amount of time.
+
+Java is able to write multi-threading programs, which enables you to write in a way where multiple activities can proceed concurrently in the same program. Multitasking is when multiple processes share common processing resources such as a CPU. Multi-threading extends the idea of multitasking into applications where you can subdivide specific operations within a single application into individual threads. Each of the threads can run in parallel. The OS divides processing time not only among different applications, but also among each thread within an application.
+[tutorialspoint Java Multithreading](https://www.tutorialspoint.com/java/java_multithreading.htm)
+
 
 ```java
+//implementing Runnable to create thread
 public class MyRunnable implements Runnable {
   public void run() {
   // some code goes here
-
   }
 }
 //creates and starts thread
 new Thread(new MyRunnable()).start(); 
+
+//extending Thread class to create thread
+class ThreadDemo extends Thread {
+   private Thread t;
+   private String threadName;
+   
+   ThreadDemo( String name) {
+      threadName = name;
+      System.out.println("Creating " +  threadName );
+   }
+   
+   public void run() {
+      //run() code
+   }
+   
+   public void start () {
+      if (t == null) {
+         t = new Thread (this, threadName);
+         t.start ();
+      }
+   }
+}
+```
