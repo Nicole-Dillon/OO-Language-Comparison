@@ -312,6 +312,10 @@ x!
 ```
 
 #### Java
+Java uses `null` and it can be assigned to any reference type. If `null` is used incorrectly, a `NullPointerException` is thrown.
+```java
+Integer i = null;
+```
 	
 ### Errors and exception handling
 #### Swift
