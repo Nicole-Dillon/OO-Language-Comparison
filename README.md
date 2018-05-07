@@ -428,6 +428,21 @@ ChangeListener<Number> lambdaChangeListener = (ObservableValue<? extends Number>
 #### Swift
 
 #### Java
+An event is used to inform a listener that something has happened to a component in the GUI. It includes all of the information that a listener needs to figure out what happened and to whom it happened (the what and who of the event). An event must give enough information to fully describe itself.
+[Javaworld Events and listeners](https://www.javaworld.com/article/2077351/java-se/events-and-listeners.html)
+A common event listener is the ChangeListener. A ChangeListener is notified whenever the value of an ObservableValue changes
+[Java Documentation](https://docs.oracle.com/javase/8/javafx/api/javafx/beans/value/ChangeListener.html)
+
+```java
+ChangeListener<Number> changeListener = new ChangeListener<Number>() {
+     @Override 
+     public void changed(ObservableValue< ? extends Number> observable, Number oldValue, final Number newValue) {
+          drawGrid();
+     } 
+};
+
+this.gridPane.widthProperty().addListener(changeListener);
+```
 
 ### Singleton
 #### Swift
@@ -544,8 +559,6 @@ init(target: Any, selector: Selector, object: Any?)
 Threads can be created by either extending the Thread class or implementing the Runnable interface.`start()` is used to initiate execution of a thread. `run()` serves as the path of execution for all threads. `sleep()` will make the current thread cease executing for a specified amount of time.
 
 Java is able to write multi-threading programs, which enables you to write in a way where multiple activities can proceed concurrently in the same program. Multitasking is when multiple processes share common processing resources such as a CPU. Multi-threading extends the idea of multitasking into applications where you can subdivide specific operations within a single application into individual threads. Each of the threads can run in parallel. The OS divides processing time not only among different applications, but also among each thread within an application.
-[tutorialspoint Java Multithreading](https://www.tutorialspoint.com/java/java_multithreading.htm)
-
 
 ```java
 //implementing Runnable to create thread
@@ -579,3 +592,4 @@ class ThreadDemo extends Thread {
    }
 }
 ```
+[tutorialspoint Java Multithreading](https://www.tutorialspoint.com/java/java_multithreading.htm)
