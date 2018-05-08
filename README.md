@@ -1,5 +1,5 @@
 # Java and Swift Language Comparison
-## Nicole Dillon
+#### Nicole Dillon
 
 - [Language purpose/genesis](LanguagePurpose.md)
 	- Why was the language created?
