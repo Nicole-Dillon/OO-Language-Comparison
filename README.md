@@ -25,35 +25,35 @@
 	- Getters and setters…write your own or built in?
 	- Backing variables?
 	- Computed properties?
-- Interfaces / protocols
+- [Interfaces / protocols](Interfaces.md)
 	- What does the language support?
 	- What abilities does it have?
 	- How is it used?
-- Inheritance / extension
-- Reflection
+- [Inheritance / extension](Inheritance.md)
+- [Reflection](Reflection.md)
 	- What reflection abilities are supported?
 	- How is reflection used?
-- Memory management
+- [Memory management](MemoryManagement.md)
 	- How is it handled?
 	- How does it work?
 	- Garbage collection?
 	- Automatic reference counting?
-- Comparisons of references and values
+- [Comparisons of references and values](Comparisons.md)
 	- How are values compared? (i.e. comparing two strings)
-- Null/nil references
+- [Null/nil references](Null-Nil.md)
 	- Which does the language use? (null/nil/etc)
 	- Does the language have features for handling null/nil references?
-- Errors and exception handling
-- Lambda expressions, closures, or functions as types
-- Implementation of listeners and event handlers
-- Singleton
+- [Errors and exception handling](ExceptionHandling.md)
+- [Lambda expressions, closures, or functions as types](LambdaExpressions.md)
+- [Implementation of listeners and event handlers](EventHandlers.md)
+- [Singleton](Singleton.md)
 	- How is a singleton implemented?
 	- Can it be made thread-safe?
 	- Can the singleton instance be lazily instantiated?
-- Procedural programming
+- [Procedural programming](ProceduralProgramming.md)
 	- Does the language support procedural programming?
-- Functional programming
+- [Functional programming](FunctionalProgramming.md)
 	- Does the language support functional programming?
-- Multithreading
+- [Multithreading](Multithreading.md)
 	- Threads or thread-like abilities
 	- How is multitasking accomplished?
