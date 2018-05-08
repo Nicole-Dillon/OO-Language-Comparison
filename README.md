@@ -1,27 +1,27 @@
 # Java and Swift Language Comparison
 ## Nicole Dillon
 
-- Language purpose/genesis
+- [Language purpose/genesis](LanguagePurpose.md)
 	- Why was the language created?
 	- What problems was the language trying to address?
 	- Is the language a reaction to a previous language or a replacement for another language?
-- Unique features of the language
+- [Unique features of the language](UniqueFeatures.md)
 	- Does the language have any particularly unique features?
-- Name spaces
+- [Name spaces](Namespace.md)
 	- How are name spaces implemented?
 	- How are name spaces used?
-- Types
+- [Types](Types.md)
 	- What types does the language support?
 	- Are both reference and value types supported?
 	- Can new value types be created?
-- Classes
+- [Classes](Classes.md)
 	- Defining
 	- Creating new instances
 	- Constructing/initializing
 	- Destructing/de-initializing
-- Instance reference name in data type (class)
+- [Instance reference name in data type (class)](Instance.md)
 	- this? self?
-- Properties
+- [Properties](Properties.md)
 	- Getters and setters…write your own or built in?
 	- Backing variables?
 	- Computed properties?
